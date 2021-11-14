@@ -1,8 +1,15 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "tailwindcss/tailwind.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import type { AppProps } from "next/app";
+import React from "react";
+import { ColorProvider } from "./components/color-context";
+
+function Website({ Component, pageProps }: AppProps) {
+  return (
+    <ColorProvider>
+      <Component {...pageProps} />
+    </ColorProvider>
+  );
 }
 
-export default MyApp
+export default Website;
