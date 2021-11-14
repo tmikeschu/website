@@ -7,8 +7,8 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { HTMLAttributes, Dispatch, SetStateAction } from "react";
 import avatar from "../public/avatar.png";
-import { Projects, showRepo } from "./components/projects";
-import { Repo } from "./components/projects/types";
+import { Projects, showRepo } from "../src/components/projects";
+import { Repo } from "../src/components/projects/types";
 import {
   CodeSandbox,
   Github,
@@ -16,9 +16,9 @@ import {
   Medium,
   Email,
   Twitter,
-} from "./components/social-icons";
+} from "../src/components/social-icons";
 import { ColorSwatchIcon } from "@heroicons/react/solid";
-import { useColor } from "./components/color-context";
+import { useColor } from "../src/components/color-context";
 
 const Panel: React.FC<HTMLAttributes<HTMLDivElement>> = ({
   className,
