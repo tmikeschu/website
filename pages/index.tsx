@@ -25,7 +25,7 @@ const Panel: React.FC<HTMLAttributes<HTMLDivElement>> = ({
   ...props
 }) => (
   <section
-    className={`w-full md:w-1/2 h-1/2 md:h-screen flex items-center justify-center ${className}`}
+    className={`w-full md:w-1/2 min-h-screen-1/2 p-4 md:h-screen flex items-center justify-center ${className}`}
     {...props}
   />
 );
@@ -52,7 +52,7 @@ const Home: NextPage<{ repos: Repo[] }> = ({ repos }) => {
 
       <main className="flex flex-wrap items-center dark:bg-gray-800 w-screen h-screen">
         <div
-          className={`absolute top-4 right-4 text-${color}-700 hover:-rotate-45 transform transition-transform`}
+          className={`absolute top-4 right-4 text-${color}-700 hover:-rotate-90 transform`}
           role="button"
           onClick={nextColor}
         >
@@ -70,14 +70,8 @@ const Home: NextPage<{ repos: Repo[] }> = ({ repos }) => {
         </Panel>
 
         <Panel className={`bg-${color}-200`}>
-          <div className="w-3/4 h-auto rounded-full overflow-hidden">
-            <Image
-              className="block"
-              src={avatar}
-              alt="Mike Schutte"
-              layout="responsive"
-              objectFit="cover"
-            />
+          <div className="w-3/4 h-auto rounded-full overflow-hidden flex">
+            <Image src={avatar} alt="Mike Schutte" />
           </div>
         </Panel>
 
