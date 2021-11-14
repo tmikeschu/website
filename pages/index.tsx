@@ -52,7 +52,7 @@ const Home: NextPage<{ repos: Repo[] }> = ({ repos }) => {
 
       <main className="flex flex-wrap items-center dark:bg-gray-800 w-screen h-screen">
         <div
-          className={`absolute top-4 right-4 text-${color}-900`}
+          className={`absolute top-4 right-4 text-${color}-700 hover:-rotate-45 transform transition-transform`}
           role="button"
           onClick={nextColor}
         >
