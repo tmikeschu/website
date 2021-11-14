@@ -11,7 +11,7 @@ const SocialLink: React.FC<{
 }> = ({ href, children }) => (
   <div className="flex items-center justify-center p-4">
     <a
-      className="w-1/3 flex items-center justify-center hover:skew-y-12 transform transition-transform "
+      className="w-1/3 flex items-center justify-center hover:skew-y-12 transform transition-transform duration-500"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
