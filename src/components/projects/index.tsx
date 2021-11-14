@@ -29,7 +29,7 @@ export const Projects: React.FC<{ repos: Repo[] }> = ({
   return (
     <div className={`text-${color}-700 w-full flex flex-col items-center`}>
       <h2 className="font-bold mb-4">Projects</h2>
-      <div className="flex flex-col items-center space-y-2 lg:flex-row lg:space-y-0 lg:space-x-2 w-full">
+      <div className="flex flex-col items-center space-y-2 lg:flex-row lg:space-y-0 lg:space-x-2">
         {repos.length > 0 ? (
           repos.map(({ name, has_pages, homepage }, i) => (
             <a
