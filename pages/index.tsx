@@ -71,7 +71,12 @@ const Home: NextPage<{ repos: Repo[] }> = ({ repos }) => {
 
         <Panel className={`bg-${color}-200`}>
           <div className="w-3/4 h-auto rounded-full overflow-hidden flex">
-            <Image src={avatar} alt="Mike Schutte" />
+            <Image
+              src={avatar}
+              alt="Mike Schutte"
+              placeholder="blur"
+              priority
+            />
           </div>
         </Panel>
 
