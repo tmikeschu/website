@@ -1,7 +1,6 @@
 import React from "react";
 import MediumSVG from "./medium";
 import GithubSVG from "./github";
-import TwitterSVG from "./twitter";
 import LinkedInSVG from "./linked-in";
 import EmailSVG from "./email";
 import CodeSandboxSVG from "./code-sandbox";
@@ -30,12 +29,6 @@ export const Github = () => (
 export const CodeSandbox = () => (
   <SocialLink href="https://codesandbox.io/u/tmikeschu">
     <CodeSandboxSVG className="w-full" />
-  </SocialLink>
-);
-
-export const Twitter = () => (
-  <SocialLink href="https://twitter.com/tmikeschu">
-    <TwitterSVG className="w-full" />
   </SocialLink>
 );
 

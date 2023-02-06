@@ -15,7 +15,6 @@ import {
   LinkedIn,
   Medium,
   Email,
-  Twitter,
 } from "../src/components/social-icons";
 import { ColorSwatchIcon } from "@heroicons/react/solid";
 import { useColor } from "../src/components/color-context";
@@ -88,10 +87,6 @@ const Home: NextPage<{ repos: Repo[] }> = ({ repos }) => {
           <Github />
         </Panel>
 
-        <Panel className={`bg-${color}-500`}>
-          <Twitter />
-        </Panel>
-
         <Panel className={`bg-${color}-600`}>
           <Medium />
         </Panel>
@@ -144,7 +139,7 @@ const Home: NextPage<{ repos: Repo[] }> = ({ repos }) => {
           <Projects repos={repos} />
         </Panel>
 
-        <Panel className={`bg-${color}-200 md:w-full`}>
+        <Panel className={`bg-${color}-200`}>
           <iframe
             className="w-full h-full"
             src="https://player.vimeo.com/video/202161614?color=ffffff"
