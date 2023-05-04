@@ -4,6 +4,8 @@ import GithubSVG from "./github";
 import LinkedInSVG from "./linked-in";
 import EmailSVG from "./email";
 import CodeSandboxSVG from "./code-sandbox";
+import DevToSVG from "./dev-to";
+import NotionSVG from "./notion";
 
 const SocialLink: React.FC<{
   href: string;
@@ -47,5 +49,17 @@ export const LinkedIn = () => (
 export const Email = () => (
   <SocialLink href="mailto:tmikeschutte@gmail.com">
     <EmailSVG className="w-full" />
+  </SocialLink>
+);
+
+export const DevTo = () => (
+  <SocialLink href="https://dev.to/tmikeschu">
+    <DevToSVG className="w-full" />
+  </SocialLink>
+);
+
+export const Notion = () => (
+  <SocialLink href="https://tmikeschu.notion.site/Mike-Schutte-5add0a66d873429c8dc0fc84b4e3cf96">
+    <NotionSVG className="w-full" />
   </SocialLink>
 );

@@ -10,7 +10,7 @@ const JV = [
   "the-spoken-tour",
 ];
 
-const SPECIAL = ["avett-rx"];
+const SPECIAL = ["avett-rx", "first-fifty"];
 
 const hasPages = (x: Repo) => {
   return x.has_pages || SPECIAL.includes(x.name);
